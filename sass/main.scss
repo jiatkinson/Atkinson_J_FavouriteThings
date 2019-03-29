@@ -2,4 +2,8 @@
 @import 'modules/_home';
 @import 'modules/_vacations';
 
-a { text-decoration: none; color: white; text-transform: uppercase; }
+a {
+    text-decoration: none;
+    color: blue;
+    text-transform: capitalize;
+}

@@ -1,11 +1,13 @@
-<section id="favourites">
+<section id="favourites" class="row">
 
+  <div class="vacation-cont">
   {{#each vacay}}
-  <div class="vacation">
-    <h2 class="vacation-name">{{vacation_name}}</h2>
-    <a href="/{{vacation_name}}">
-        <img src="/images/{{vacation_img}}" alt="vaction image" class="vacation_img"></a>
-  </div>
+    <div class="vacation small-offset-1 small-3">
+      <a href="/{{vacation_name}}">
+          <img src="/images/{{vacation_img}}" alt="vaction image" class="vacation_img"></a>
+      <h2 class="vacation-name">{{vacation_name}}</h2>
+    </div>
   {{/each}}
+  </div>
 
 </section>

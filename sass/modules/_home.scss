@@ -12,12 +12,14 @@ body {
 }
 
 h1 {
-    color: $navfont;
+    color: $navlink;
+    font-family: $titlefont;
+    font-weight: bold;
 }
 
 
 h2 { 
-    font-family: 'Permanent Marker', cursive;
+    font-family: $polaroidfont;
     color: black;
 }
 
@@ -41,7 +43,7 @@ nav {
 
     a {
         float: right;
-        color: $navfont;
+        color: $navlink;
     }
 
     a:hover {
@@ -83,9 +85,9 @@ footer {
     display: inline-block; 
     text-align: center;
     margin: 0 2px 0px;
-    border: 12px solid white;
+    border: 8px solid white;
     border-bottom-width: 0;
-    background: $navfont;
+    background: $navlink;
 
     img {
         width: 100%;
@@ -103,7 +105,7 @@ footer {
 
 .vacation-name {
     text-align: center;
-    font-size: 2rem;
+    font-size: 15px;
     padding-top: 5px;
 }
 
@@ -111,6 +113,9 @@ footer {
 
     h3 {
         font-size: 20px;
+        font-family: $pfont;
+        margin-bottom: 0;
+        color: black;
     }
 
     p {
@@ -118,6 +123,7 @@ footer {
         margin-bottom: 2px;
         text-transform: initial;
         color: black;
+        font-family: $pfont;
     }
 
     i {
@@ -126,7 +132,7 @@ footer {
     }
 
     a {
-        color: $navfont;
+        color: $navlink;
     }
 
     a:hover {
@@ -135,11 +141,33 @@ footer {
 
 }
 
-
 #insta-box {
-    background-color:rgba(255, 255, 255, 0.95);
     margin-left: 60px;
     margin-right: 60px;
     padding-top: 5px;
     padding-bottom: 7px;
+}
+
+@media screen and (min-width: 400px) {
+
+    .vacation { 
+        border: 8px solid white;
+    }
+
+    .vacation-name {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .vacation { 
+        border: 12px solid white;    
+    }
+
+    .vacation-name {
+        font-size: 32px;
+    }
+
 }

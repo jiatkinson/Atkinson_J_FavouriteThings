@@ -1,12 +1,11 @@
-<section id="heroes">
-    {{#each avatars}}
-        <div class="hero-container">
-            <a href="/{{name}}">
-                <img src="/images/{{avatar}}" alt="avatar">
-            </a>
+<section id="favourites">
 
-            <h3 class="hero-name">{{name}}</h3>
-        </div>
+  {{#each vacay}}
+  <div class="vacation">
+    <h2 class="vacation-name">{{vacation_name}}</h2>
+    <a href="/{{vacation_name}}">
+        <img src="/images/{{vacation_img}}" alt="vaction image" class="vacation_img"></a>
+  </div>
+  {{/each}}
 
-    {{/each}}
 </section>
